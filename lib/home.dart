@@ -11,7 +11,12 @@ class MyHomePage extends StatelessWidget {
         color: Colors.orange,
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
-        child: SvgPicture.asset('assets/new.svg',fit: BoxFit.cover,width: MediaQuery.of(context).size.width,),
+        child: Column(
+          children: [
+            Text("welcome to project"),
+            SvgPicture.asset('assets/new.svg',fit: BoxFit.cover,width: MediaQuery.of(context).size.width,),
+          ],
+        ),
       ),
     );
   }
